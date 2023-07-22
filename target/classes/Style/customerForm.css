@@ -1,0 +1,20 @@
+
+.button-add{
+    -fx-text-fill:#ffff ;
+    -fx-font-weight: bold;
+    -fx-font-size: 15;
+    -fx-background-color: #a4aab4 ;
+    -fx-background-radius: 20;
+}
+.button-update{
+    -fx-text-fill:#ffff ;
+    -fx-font-weight: bold;
+    -fx-font-size: 15;
+    -fx-background-color:#293d34 ;
+    -fx-background-radius: 20;
+}
+.labelTotal{
+    -fx-background-color: #fff;
+    -fx-background-radius: 50;
+    -fx-effect: dropshadow( gaussian ,dimgray,40,0.1,0,0);
+}

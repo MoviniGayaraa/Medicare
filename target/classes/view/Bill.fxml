@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane minHeight="-Infinity" minWidth="-Infinity" prefHeight="778.0" prefWidth="1184.0" stylesheets="@../Style/customerForm.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.pharmacy.controller.BillFormController">
+   <children>
+      <ImageView fitHeight="790.0" fitWidth="1187.0" layoutY="-8.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/background16.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="107.0" layoutY="30.0" prefHeight="94.0" prefWidth="234.0" text="BILLFORM">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="940.0" layoutY="709.0" prefHeight="35.0" prefWidth="218.0" text="United Pharmacy">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="23.0" fitWidth="31.0" layoutX="87.0" layoutY="66.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/bill2icon.jpg" />
+         </image>
+      </ImageView>
+      <TableView fx:id="BillTbl" layoutX="85.0" layoutY="394.0" onMouseClicked="#BillMouseClick" prefHeight="306.0" prefWidth="1009.0">
+         <columns>
+            <TableColumn fx:id="BillIdCol" prefWidth="160.0" text="BillId" />
+            <TableColumn fx:id="OrderIdCol" prefWidth="160.0" text="OrderId" />
+            <TableColumn fx:id="TotalAmtCol" prefWidth="180.0" text="TotalAmt" />
+            <TableColumn fx:id="CustPayCol" prefWidth="180.0" text="CustPay" />
+            <TableColumn fx:id="OrderDateCol" prefWidth="162.0" text="OrderDate" />
+            <TableColumn fx:id="DiscountCol" prefWidth="165.0" text="Discount" />
+         </columns>
+      </TableView>
+      <TextField fx:id="searchText" layoutX="907.0" layoutY="58.0" promptText="Search Id" />
+      <ImageView fitHeight="25.0" fitWidth="23.0" layoutX="1038.0" layoutY="64.0" onMouseClicked="#SearchMouseClick" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/searchbarIcon.png" />
+         </image>
+      </ImageView>
+      <JFXButton fx:id="btnUpdate" layoutX="909.0" layoutY="339.0" onAction="#btnUpdateOnAction" styleClass="button-update" text="UPDATE">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="btnAdd" layoutX="806.0" layoutY="339.0" onAction="#btnAddOnAction" prefHeight="31.0" prefWidth="79.0" style="-fx-background-color: #58AF50;" styleClass="button-add" text="ADD">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="btnDelete" layoutX="1015.0" layoutY="339.0" onAction="#btnDeleteOnAction" styleClass="button-update" text="DELETE">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </JFXButton>
+      <TextField fx:id="BillIdText" layoutX="87.0" layoutY="156.0" onMouseClicked="#txtIdOnMouseClicked" prefHeight="25.0" prefWidth="218.0" />
+      <Label layoutX="88.0" layoutY="133.0" prefHeight="17.0" prefWidth="149.0" text="Bill ID" />
+      <Label layoutX="472.0" layoutY="132.0" prefHeight="17.0" prefWidth="149.0" text="Order ID" />
+      <TextField fx:id="AmountText" layoutX="862.0" layoutY="154.0" prefHeight="25.0" prefWidth="218.0" />
+      <Label layoutX="860.0" layoutY="131.0" prefHeight="17.0" prefWidth="149.0" text="Total Amount" />
+      <TextField fx:id="PayemntText" layoutX="86.0" layoutY="233.0" prefHeight="25.0" prefWidth="218.0" />
+      <Label layoutX="87.0" layoutY="210.0" prefHeight="17.0" prefWidth="149.0" text="Customer Payment" />
+      <TextField fx:id="DiscountText" layoutX="473.0" layoutY="232.0" prefHeight="25.0" prefWidth="218.0" />
+      <Label layoutX="471.0" layoutY="209.0" prefHeight="17.0" prefWidth="149.0" text="Discount" />
+      <Label layoutX="859.0" layoutY="208.0" prefHeight="17.0" prefWidth="149.0" text="Order Date" />
+      <ComboBox fx:id="OrderIdBox" layoutX="471.0" layoutY="154.0" prefHeight="25.0" prefWidth="218.0" />
+      <DatePicker fx:id="OrderDateText" layoutX="862.0" layoutY="232.0" prefHeight="25.0" prefWidth="195.0" />
+   </children>
+</AnchorPane>

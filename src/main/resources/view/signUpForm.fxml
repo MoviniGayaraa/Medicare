@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="587.0" prefWidth="959.0" stylesheets="@../Style/DashboardForm.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.pharmacy.controller.SignUPController">
+   <children>
+      <ImageView fitHeight="587.0" fitWidth="1034.0" pickOnBounds="true">
+         <image>
+            <Image url="@../img/login.jpg" />
+         </image>
+      </ImageView>
+      <Pane layoutX="633.0" layoutY="82.0" prefHeight="424.0" prefWidth="375.0" styleClass="pane-box">
+         <children>
+            <Text layoutX="103.0" layoutY="72.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sign up">
+               <font>
+                  <Font name="Sitka Text Bold" size="44.0" />
+               </font>
+            </Text>
+            <JFXButton fx:id="signUPBtn" layoutX="188.0" layoutY="340.0" onAction="#signBtnOnAction" prefHeight="35.0" prefWidth="163.0" styleClass="loginBtn" stylesheets="@../Style/LoginForm.css" text="Sign Up" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </JFXButton>
+            <TextField fx:id="userNameTxt" layoutX="186.0" layoutY="177.0" onMouseClicked="#txtUserNameOnMouseClicked" prefHeight="25.0" prefWidth="169.0" />
+            <Label layoutX="84.0" layoutY="173.0" text="Username">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="87.0" layoutY="237.0" text="Password">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <Hyperlink fx:id="AlreadyHaveAnAccountHyperLink" layoutX="93.0" layoutY="382.0" onAction="#hyperLinkOnAction" prefHeight="29.0" prefWidth="213.0" text="Already have an account">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Hyperlink>
+            <TextField fx:id="emailTxt" layoutX="186.0" layoutY="114.0" onMouseClicked="#txtEmailOnMouseClicke" prefHeight="25.0" prefWidth="169.0" />
+            <Label layoutX="120.0" layoutY="110.0" text="Email">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="16.0" layoutY="296.0" text="Confirm password">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <PasswordField fx:id="passwordTxt" layoutX="186.0" layoutY="237.0" onMouseClicked="#txtPasswordOnMouseCllicked" prefHeight="25.0" prefWidth="169.0" />
+            <PasswordField fx:id="confirmPassword" layoutX="186.0" layoutY="296.0" onMouseClicked="#txtConPasswordOnMouseClicked" prefHeight="25.0" prefWidth="163.0" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

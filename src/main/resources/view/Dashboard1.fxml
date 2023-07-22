@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.LineChart?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane minHeight="-Infinity" minWidth="-Infinity" prefHeight="778.0" prefWidth="1183.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.pharmacy.controller.Dashboard1FormController">
+   <children>
+      <LineChart layoutX="63.0" layoutY="436.0" prefHeight="329.0" prefWidth="525.0">
+        <xAxis>
+          <CategoryAxis side="BOTTOM" />
+        </xAxis>
+        <yAxis>
+          <NumberAxis prefHeight="215.0" prefWidth="44.0" side="LEFT" />
+        </yAxis>
+      </LineChart>
+      <ImageView fitHeight="785.0" fitWidth="1191.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/background12.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="73.0" layoutY="59.0" prefHeight="105.0" prefWidth="636.0" text="United Pharmacy">
+         <font>
+            <Font name="System Bold Italic" size="36.0" />
+         </font>
+      </Label>
+      <Label layoutX="864.0" layoutY="99.0" prefHeight="25.0" prefWidth="225.0" text="2023.03.02">
+         <font>
+            <Font name="System Bold Italic" size="24.0" />
+         </font>
+      </Label>
+      <Label contentDisplay="CENTER" layoutX="79.0" layoutY="253.0" prefHeight="58.0" prefWidth="278.0" style="-fx-background-color: #FDFEFD; -fx-background-radius: 50 50 50 50;" styleClass="totalCustomerLabel" stylesheets="@../Style/DashboardForm.css" text="       Total Customer" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold Italic" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="439.0" layoutY="771.0" />
+      <Label layoutX="439.0" layoutY="663.0" />
+      <Label layoutX="85.0" layoutY="841.0" prefHeight="72.0" prefWidth="266.0">
+         <font>
+            <Font name="System Bold" size="36.0" />
+         </font>
+      </Label>
+      <Label layoutX="157.0" layoutY="327.0" prefHeight="93.0" prefWidth="89.0" text="04">
+         <font>
+            <Font name="System Bold" size="64.0" />
+         </font>
+      </Label>
+      <Label layoutX="510.0" layoutY="327.0" prefHeight="105.0" prefWidth="84.0" text="04">
+         <font>
+            <Font name="System Bold" size="64.0" />
+         </font>
+      </Label>
+      <Label layoutX="864.0" layoutY="327.0" prefHeight="105.0" prefWidth="102.0" text="04">
+         <font>
+            <Font name="System Bold" size="64.0" />
+         </font>
+      </Label>
+      <Label contentDisplay="CENTER" layoutX="413.0" layoutY="253.0" prefHeight="58.0" prefWidth="266.0" style="-fx-background-color: #FDFEFD; -fx-background-radius: 50 50 50 50;" styleClass="totalCustomerLabel" stylesheets="@../Style/DashboardForm.css" text="         Total Sales" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold Italic" size="24.0" />
+         </font>
+      </Label>
+      <Label contentDisplay="CENTER" layoutX="776.0" layoutY="253.0" prefHeight="58.0" prefWidth="278.0" style="-fx-background-color: #FDFEFD; -fx-background-radius: 50 50 50 50;" styleClass="totalCustomerLabel" stylesheets="@../Style/DashboardForm.css" text="        Total Employee" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold Italic" size="24.0" />
+         </font>
+      </Label>
+      <Pane fx:id="pane" layoutX="3.0" layoutY="6.0" prefHeight="769.0" prefWidth="1177.0">
+         <children>
+            <LineChart layoutX="64.0" layoutY="440.0" prefHeight="329.0" prefWidth="525.0">
+               <xAxis>
+                  <CategoryAxis side="BOTTOM" />
+               </xAxis>
+               <yAxis>
+                  <NumberAxis prefHeight="215.0" prefWidth="44.0" side="LEFT" />
+               </yAxis>
+            </LineChart>
+         </children></Pane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,9 @@
+.loginBtn{
+    -fx-background-redius: 20;
+    -fx-background-color: #000;
+    /*-fx-effect: dropshadow(gaussian , #000000,35,0.1,0,0);*/
+}
+.loginBtn:hover{
+    -fx-background-redius: 20;
+    /*-fx-effect: dropshadow(gaussian , #000000,50,0.1,0,0);*/
+}

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="587.0" prefWidth="959.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.pharmacy.controller.HomepageFormController">
+   <children>
+      <ImageView fitHeight="587.0" fitWidth="903.0" layoutX="42.0" layoutY="-1.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/background1.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="98.0" layoutY="95.0" prefHeight="112.0" prefWidth="340.0" text="Welcome">
+         <font>
+            <Font name="System Bold Italic" size="64.0" />
+         </font>
+      </Label>
+      <Label layoutX="221.0" layoutY="249.0" prefHeight="30.0" prefWidth="129.0" text="to">
+         <font>
+            <Font name="System Bold Italic" size="36.0" />
+         </font>
+      </Label>
+      <Label layoutX="120.0" layoutY="316.0" prefHeight="93.0" prefWidth="535.0" text="United Pharmacy">
+         <font>
+            <Font name="System Bold Italic" size="36.0" />
+         </font>
+      </Label>
+      <JFXButton layoutX="725.0" layoutY="517.0" onAction="#homeOnAction" prefHeight="31.0" prefWidth="129.0" styleClass="button-done" stylesheets="@../Style/CustomerAddForm.css" text="CONTINUE">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </JFXButton>
+      <Label layoutX="132.0" layoutY="409.0" prefHeight="30.0" prefWidth="374.0" text="We Care About Your Helth">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

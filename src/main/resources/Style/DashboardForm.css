@@ -1,0 +1,20 @@
+.background{
+    -fx-background-color: linear-gradient(to left, #55b282,transparent);
+
+}
+.pane-box{
+    -fx-background-color: rgba(0,0,0 ,0.2);
+    -fx-background-radius: 20;
+}
+
+.totalCustomerLabel{
+    -fx-background-redius: 20;
+    -fx-effect: dropshadow(gaussian , #000000,50,0.1,0,0);
+}
+
+.customerLabel{
+
+    -fx-border-color: black;
+    -fx-background-redius: 20;
+    -fx-effect: dropshadow(gaussian , #000000,50,0.1,0,0);
+}

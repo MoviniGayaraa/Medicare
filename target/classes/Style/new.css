@@ -1,0 +1,23 @@
+.chart {
+    -fx-background-color: #dfa47e;}
+.chart-pie {
+    -fx-pie-color:#7B3927 ;}
+.chart-pie-label {    -fx-font-weight: bold;
+}
+.chart-title {
+    -fx-text-fill: #7B3927;    -fx-font-weight: bold;
+    -fx-font-size: 20px
+}
+.chart-legend {    -fx-font-size: 12px;
+    -fx-text-fill: #7B3927;}
+.chart-pie {
+    /*-fx-effect: dropshadow(gaussian, rgba(0,0,0,0.3), 5, 0, 0, 2);*/}
+.chart-legend {
+    -fx-background-color: transparent;}
+.chart-pie {
+    -fx-border-color: #dfa47e;}
+
+.chart-pie {
+    -fx-border-width: 1.5px;}
+.chart-pie-label-line {
+    -fx-stroke: #7B3927;}

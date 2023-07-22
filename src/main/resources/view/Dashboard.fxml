@@ -1,0 +1,356 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.LineChart?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.chart.PieChart?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane minHeight="-Infinity" minWidth="-Infinity" prefHeight="778.0" prefWidth="1614.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.pharmacy.controller.DashboardFormController">
+   <children>
+      <ImageView fitHeight="785.0" fitWidth="1191.0" layoutX="431.0" layoutY="-1.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/background12.jpg" />
+         </image>
+      </ImageView>
+      <AnchorPane layoutY="-5.0" prefHeight="785.0" prefWidth="422.0" style="-fx-background-color: #58AF50;" styleClass="background" stylesheets="@../Style/DashboardForm.css">
+         <children>
+            <JFXButton alignment="TOP_LEFT" layoutX="7.0" layoutY="127.0" prefHeight="48.0" prefWidth="423.0" text="Employee">
+               <font>
+                  <Font name="Times New Roman Bold" size="27.0" />
+               </font>
+               <graphic>
+                  <GridPane prefHeight="38.0" prefWidth="376.0">
+                     <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="147.0" minWidth="10.0" prefWidth="45.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="325.0" minWidth="10.0" prefWidth="294.0" />
+                     </columnConstraints>
+                     <rowConstraints>
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                     </rowConstraints>
+                     <children>
+                        <ImageView fitHeight="33.0" fitWidth="39.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../img/home.png" />
+                           </image>
+                           <GridPane.margin>
+                              <Insets left="30.0" />
+                           </GridPane.margin>
+                        </ImageView>
+                        <JFXButton fx:id="btnHome" alignment="TOP_LEFT" onAction="#btnHomeOnAction" prefHeight="48.0" prefWidth="181.0" text="HOME" textFill="#f8f6f6" GridPane.columnIndex="1">
+                           <font>
+                              <Font name="Times New Roman Bold" size="24.0" />
+                           </font>
+                        </JFXButton>
+                     </children>
+                  </GridPane>
+               </graphic>
+            </JFXButton>
+            <JFXButton alignment="TOP_LEFT" layoutX="2.0" layoutY="202.0" prefHeight="48.0" prefWidth="423.0" text="Employee">
+               <font>
+                  <Font name="Times New Roman Bold" size="27.0" />
+               </font>
+               <graphic>
+                  <GridPane prefHeight="38.0" prefWidth="376.0">
+                     <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="130.0" minWidth="10.0" prefWidth="70.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="314.0" minWidth="10.0" prefWidth="306.0" />
+                     </columnConstraints>
+                     <rowConstraints>
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                     </rowConstraints>
+                     <children>
+                        <ImageView fitHeight="29.0" fitWidth="33.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../img/manw.png" />
+                           </image>
+                           <GridPane.margin>
+                              <Insets left="30.0" />
+                           </GridPane.margin>
+                        </ImageView>
+                        <JFXButton alignment="TOP_LEFT" onAction="#btnCustomerOnAction" prefHeight="64.0" prefWidth="223.0" text="CUSTOMER" textFill="#f8f5f5" GridPane.columnIndex="1">
+                           <font>
+                              <Font name="Times New Roman Bold" size="24.0" />
+                           </font>
+                        </JFXButton>
+                     </children>
+                  </GridPane>
+               </graphic>
+            </JFXButton>
+            <JFXButton alignment="TOP_LEFT" layoutY="289.0" prefHeight="48.0" prefWidth="341.0" text="Employee">
+               <font>
+                  <Font name="Times New Roman Bold" size="27.0" />
+               </font>
+               <graphic>
+                  <GridPane prefHeight="38.0" prefWidth="355.0">
+                     <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="135.0" minWidth="10.0" prefWidth="78.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="279.0" minWidth="10.0" prefWidth="277.0" />
+                     </columnConstraints>
+                     <rowConstraints>
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                     </rowConstraints>
+                     <children>
+                        <ImageView fitHeight="30.0" fitWidth="33.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../img/manw.png" />
+                           </image>
+                           <GridPane.margin>
+                              <Insets left="30.0" />
+                           </GridPane.margin>
+                        </ImageView>
+                        <JFXButton alignment="TOP_LEFT" onAction="#btnEmployeeOnAction" prefHeight="64.0" prefWidth="216.0" text="EMPLOYEE" textFill="#fff9f9" GridPane.columnIndex="1">
+                           <font>
+                              <Font name="Times New Roman Bold" size="24.0" />
+                           </font>
+                        </JFXButton>
+                     </children>
+                  </GridPane>
+               </graphic>
+            </JFXButton>
+            <JFXButton alignment="TOP_LEFT" layoutX="2.0" layoutY="365.0" prefHeight="48.0" prefWidth="423.0" text="Employee">
+               <font>
+                  <Font name="Times New Roman Bold" size="27.0" />
+               </font>
+               <graphic>
+                  <GridPane prefHeight="38.0" prefWidth="376.0">
+                     <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="127.0" minWidth="10.0" prefWidth="80.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="296.0" minWidth="10.0" prefWidth="296.0" />
+                     </columnConstraints>
+                     <rowConstraints>
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                     </rowConstraints>
+                     <children>
+                        <ImageView fitHeight="31.0" fitWidth="34.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../img/manw.png" />
+                           </image>
+                           <GridPane.margin>
+                              <Insets left="30.0" />
+                           </GridPane.margin>
+                        </ImageView>
+                        <JFXButton alignment="TOP_LEFT" onAction="#btnSupplierOnAction" prefHeight="48.0" prefWidth="181.0" text="SUPPLIER" textFill="#fffdfd" GridPane.columnIndex="1">
+                           <font>
+                              <Font name="Times New Roman Bold" size="24.0" />
+                           </font>
+                        </JFXButton>
+                     </children>
+                  </GridPane>
+               </graphic>
+            </JFXButton>
+            <JFXButton alignment="TOP_LEFT" layoutY="448.0" prefHeight="48.0" prefWidth="423.0" text="Employee">
+               <font>
+                  <Font name="Times New Roman Bold" size="27.0" />
+               </font>
+               <graphic>
+                  <GridPane prefHeight="38.0" prefWidth="376.0">
+                     <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="129.0" minWidth="10.0" prefWidth="83.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="293.0" minWidth="10.0" prefWidth="293.0" />
+                     </columnConstraints>
+                     <rowConstraints>
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                     </rowConstraints>
+                     <children>
+                        <ImageView fitHeight="36.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../img/ordertw.png" />
+                           </image>
+                           <GridPane.margin>
+                              <Insets left="30.0" />
+                           </GridPane.margin>
+                        </ImageView>
+                        <JFXButton alignment="TOP_LEFT" onAction="#btnOrderOnAction" prefHeight="44.0" prefWidth="236.0" text="ORDER" textFill="#fcf8f8" GridPane.columnIndex="1">
+                           <font>
+                              <Font name="Times New Roman Bold" size="24.0" />
+                           </font>
+                        </JFXButton>
+                     </children>
+                  </GridPane>
+               </graphic>
+            </JFXButton>
+            <JFXButton alignment="TOP_LEFT" layoutY="532.0" prefHeight="48.0" prefWidth="423.0" text="Employee">
+               <font>
+                  <Font name="Times New Roman Bold" size="27.0" />
+               </font>
+               <graphic>
+                  <GridPane prefHeight="38.0" prefWidth="376.0">
+                     <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="126.0" minWidth="10.0" prefWidth="56.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="290.0" minWidth="10.0" prefWidth="290.0" />
+                     </columnConstraints>
+                     <rowConstraints>
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                     </rowConstraints>
+                     <children>
+                        <ImageView fitHeight="33.0" fitWidth="39.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../img/itemW.png" />
+                           </image>
+                           <GridPane.margin>
+                              <Insets left="30.0" />
+                           </GridPane.margin>
+                        </ImageView>
+                        <JFXButton alignment="TOP_LEFT" onAction="#btnItemOnAction" prefHeight="48.0" prefWidth="181.0" text="ITEM" textFill="#f8f6f6" GridPane.columnIndex="1">
+                           <font>
+                              <Font name="Times New Roman Bold" size="24.0" />
+                           </font>
+                        </JFXButton>
+                     </children>
+                  </GridPane>
+               </graphic>
+            </JFXButton>
+            <JFXButton alignment="TOP_LEFT" layoutY="620.0" prefHeight="48.0" prefWidth="423.0" text="Employee">
+               <font>
+                  <Font name="Times New Roman Bold" size="27.0" />
+               </font>
+               <graphic>
+                  <GridPane prefHeight="38.0" prefWidth="376.0">
+                     <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="130.0" minWidth="10.0" prefWidth="82.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="300.0" minWidth="10.0" prefWidth="294.0" />
+                     </columnConstraints>
+                     <rowConstraints>
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                     </rowConstraints>
+                     <children>
+                        <ImageView fitHeight="37.0" fitWidth="38.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../img/formw.png" />
+                           </image>
+                           <GridPane.margin>
+                              <Insets left="30.0" />
+                           </GridPane.margin>
+                        </ImageView>
+                        <JFXButton alignment="TOP_LEFT" onAction="#btnBillFormOnAction" prefHeight="64.0" prefWidth="228.0" text="BILLFORM" textFill="#f5f5f5" GridPane.columnIndex="1">
+                           <font>
+                              <Font name="Times New Roman Bold" size="24.0" />
+                           </font>
+                        </JFXButton>
+                        <JFXButton alignment="TOP_LEFT" onAction="#btnBillFormOnAction" prefHeight="64.0" prefWidth="228.0" text="BILLFORM" textFill="#f5f5f5">
+                           <font>
+                              <Font name="Times New Roman Bold" size="24.0" />
+                           </font>
+                        </JFXButton>
+                        <JFXButton alignment="TOP_LEFT" onAction="#btnBillFormOnAction" prefHeight="64.0" prefWidth="228.0" text="BILLFORM" textFill="#f5f5f5">
+                           <font>
+                              <Font name="Times New Roman Bold" size="24.0" />
+                           </font>
+                        </JFXButton>
+                     </children>
+                  </GridPane>
+               </graphic>
+            </JFXButton>
+            <JFXButton alignment="TOP_LEFT" layoutX="7.0" layoutY="697.0" prefHeight="48.0" prefWidth="423.0" text="Employee">
+               <font>
+                  <Font name="Times New Roman Bold" size="27.0" />
+               </font>
+               <graphic>
+                  <GridPane prefHeight="38.0" prefWidth="376.0">
+                     <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="130.0" minWidth="10.0" prefWidth="82.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="300.0" minWidth="10.0" prefWidth="294.0" />
+                     </columnConstraints>
+                     <rowConstraints>
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                     </rowConstraints>
+                     <children>
+                        <ImageView fitHeight="37.0" fitWidth="38.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../img/formw.png" />
+                           </image>
+                           <GridPane.margin>
+                              <Insets left="30.0" />
+                           </GridPane.margin>
+                        </ImageView>
+                        <JFXButton alignment="TOP_LEFT" onAction="#btnReportsFormOnAction" prefHeight="64.0" prefWidth="228.0" text="Reports" textFill="#f5f5f5" GridPane.columnIndex="1">
+                           <font>
+                              <Font name="Times New Roman Bold" size="24.0" />
+                           </font>
+                        </JFXButton>
+                        <JFXButton alignment="TOP_LEFT" onAction="#btnBillFormOnAction" prefHeight="64.0" prefWidth="228.0" text="BILLFORM" textFill="#f5f5f5">
+                           <font>
+                              <Font name="Times New Roman Bold" size="24.0" />
+                           </font>
+                        </JFXButton>
+                        <JFXButton alignment="TOP_LEFT" onAction="#btnBillFormOnAction" prefHeight="64.0" prefWidth="228.0" text="BILLFORM" textFill="#f5f5f5">
+                           <font>
+                              <Font name="Times New Roman Bold" size="24.0" />
+                           </font>
+                        </JFXButton>
+                     </children>
+                  </GridPane>
+               </graphic>
+            </JFXButton>
+         </children>
+      </AnchorPane>
+      <Label layoutX="504.0" layoutY="58.0" prefHeight="105.0" prefWidth="636.0" text="United Pharmacy">
+         <font>
+            <Font name="System Bold Italic" size="36.0" />
+         </font>
+      </Label>
+      <Label fx:id="lbldate" layoutX="1295.0" layoutY="98.0" prefHeight="25.0" prefWidth="225.0" text="2033.03.02">
+         <font>
+            <Font name="System Bold Italic" size="24.0" />
+         </font>
+      </Label>
+      <Label contentDisplay="CENTER" layoutX="510.0" layoutY="252.0" prefHeight="58.0" prefWidth="278.0" style="-fx-background-color: #FDFEFD; -fx-background-radius: 50 50 50 50;" styleClass="totalCustomerLabel" stylesheets="@../Style/DashboardForm.css" text="        Total Customer" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold Italic" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="516.0" layoutY="840.0" prefHeight="72.0" prefWidth="266.0">
+         <font>
+            <Font name="System Bold" size="36.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblTotalCustomer" layoutX="588.0" layoutY="326.0" prefHeight="93.0" prefWidth="89.0" text="04">
+         <font>
+            <Font name="System Bold" size="64.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblTotalSales" layoutX="941.0" layoutY="326.0" prefHeight="105.0" prefWidth="84.0" text="04">
+         <font>
+            <Font name="System Bold" size="64.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblTotalEmployee" layoutX="1295.0" layoutY="326.0" prefHeight="105.0" prefWidth="102.0" text="04">
+         <font>
+            <Font name="System Bold" size="64.0" />
+         </font>
+      </Label>
+      <Label contentDisplay="CENTER" layoutX="844.0" layoutY="252.0" prefHeight="58.0" prefWidth="266.0" style="-fx-background-color: #FDFEFD; -fx-background-radius: 50 50 50 50;" styleClass="totalCustomerLabel" stylesheets="@../Style/DashboardForm.css" text="           Total Sales" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold Italic" size="24.0" />
+         </font>
+      </Label>
+      <Label contentDisplay="CENTER" layoutX="1207.0" layoutY="252.0" prefHeight="58.0" prefWidth="278.0" style="-fx-background-color: #FDFEFD; -fx-background-radius: 50 50 50 50;" styleClass="totalCustomerLabel" stylesheets="@../Style/DashboardForm.css" text="        Total Employee" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold Italic" size="24.0" />
+         </font>
+      </Label>
+      <Pane fx:id="pane" layoutX="434.0" layoutY="5.0" prefHeight="769.0" prefWidth="1177.0">
+         <children>
+            <LineChart fx:id="lineChart" layoutX="48.0" layoutY="418.0" prefHeight="329.0" prefWidth="525.0" title="This Month Income">
+              <xAxis>
+                <CategoryAxis side="BOTTOM" />
+              </xAxis>
+              <yAxis>
+                <NumberAxis prefHeight="215.0" prefWidth="44.0" side="LEFT" />
+              </yAxis>
+            </LineChart>
+            <PieChart fx:id="pieChart" layoutX="720.0" layoutY="430.0" prefHeight="304.0" prefWidth="402.0" title="Top 5 Sold Items This Month" />
+         </children></Pane>
+   </children>
+</AnchorPane>

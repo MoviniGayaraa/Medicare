@@ -1,0 +1,7 @@
+.button-done{
+    -fx-text-fill:#ffff ;
+    -fx-font-weight: bold;
+    -fx-font-size: 15;
+    -fx-background-color:#293d34 ;
+    -fx-background-radius: 20;
+}

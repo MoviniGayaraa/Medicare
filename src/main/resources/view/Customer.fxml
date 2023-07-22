@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane minHeight="-Infinity" minWidth="-Infinity" prefHeight="769.0" prefWidth="1186.0" stylesheets="@../Style/customerForm.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.pharmacy.controller.CustomerFormController">
+   <children>
+      <ImageView fitHeight="793.0" fitWidth="1258.0" layoutY="-2.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/background16.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="120.0" layoutY="26.0" prefHeight="94.0" prefWidth="234.0" text="CUSTOMER">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="940.0" layoutY="715.0" prefHeight="35.0" prefWidth="218.0" text="United Pharmacy">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="31.0" fitWidth="31.0" layoutX="89.0" layoutY="58.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/man2icon.png" />
+         </image>
+      </ImageView>
+      <TableView fx:id="tblCustomer" layoutX="90.0" layoutY="400.0" onMouseClicked="#tblCustomerOnMouseClicked" prefHeight="306.0" prefWidth="1009.0">
+        <columns>
+          <TableColumn fx:id="colCusId" prefWidth="144.0" text="CustId" />
+          <TableColumn fx:id="colFName" prefWidth="144.0" text="FirstName" />
+            <TableColumn fx:id="colLName" prefWidth="144.0" text="LastName" />
+            <TableColumn fx:id="colStreet" prefWidth="169.99996948242188" text="Street" />
+            <TableColumn fx:id="colCity" prefWidth="132.6666259765625" text="City" />
+            <TableColumn fx:id="colLane" prefWidth="129.3333740234375" text="Lane" />
+            <TableColumn fx:id="colContact" prefWidth="144.0" text="Contact No." />
+        </columns>
+      </TableView>
+      <Label layoutX="90.0" layoutY="120.0" prefHeight="17.0" prefWidth="86.0" text="Customer ID:" />
+      <JFXButton fx:id="btnAdd" layoutX="825.0" layoutY="354.0" onAction="#CustomerAddOnAction" prefHeight="31.0" prefWidth="86.0" style="-fx-background-color: #58AF50;" styleClass="button-add" text="ADD">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="btnUpdate" layoutX="928.0" layoutY="354.0" onAction="#btnUpdateOnAction" styleClass="button-update" text="UPDATE">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </JFXButton>
+      <TextField fx:id="txtSearch" layoutX="885.0" layoutY="61.0" onAction="#searchOnAction" onKeyTyped="#txtSearchKeyTyped" promptText="Search by ID" />
+      <ImageView fx:id="imgSearch" fitHeight="32.0" fitWidth="31.0" layoutX="1053.0" layoutY="61.0" onMouseClicked="#imgSearchOnMouseClicked" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/searchbarIcon.png" />
+         </image>
+      </ImageView>
+      <JFXButton fx:id="btnDelete" layoutX="1023.0" layoutY="354.0" onAction="#btnDeleteOnAction" styleClass="button-update" text="DELETE">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </JFXButton>
+      <TextField fx:id="txtId" layoutX="89.0" layoutY="139.0" onMouseClicked="#txtIdOnMouseClicked" prefHeight="25.0" prefWidth="218.0" />
+      <Label layoutX="478.0" layoutY="117.0" prefHeight="17.0" prefWidth="86.0" text="First Name:" />
+      <TextField fx:id="txtFirstName" layoutX="477.0" layoutY="136.0" prefHeight="25.0" prefWidth="218.0" />
+      <Label layoutX="863.0" layoutY="117.0" prefHeight="17.0" prefWidth="86.0" text="Last Name:" />
+      <TextField fx:id="txtLastName" layoutX="865.0" layoutY="136.0" prefHeight="25.0" prefWidth="218.0" />
+      <Label layoutX="89.0" layoutY="193.0" prefHeight="17.0" prefWidth="86.0" text="Street" />
+      <TextField fx:id="txtStreet" layoutX="90.0" layoutY="212.0" prefHeight="25.0" prefWidth="218.0" />
+      <Label layoutX="479.0" layoutY="190.0" prefHeight="17.0" prefWidth="86.0" text="City" />
+      <TextField fx:id="txtCity" layoutX="479.0" layoutY="209.0" prefHeight="25.0" prefWidth="218.0" />
+      <Label layoutX="865.0" layoutY="188.0" prefHeight="17.0" prefWidth="86.0" text="Lane" />
+      <TextField fx:id="txtLane" layoutX="867.0" layoutY="207.0" prefHeight="25.0" prefWidth="218.0" />
+      <Label layoutX="92.0" layoutY="264.0" prefHeight="17.0" prefWidth="114.0" text="Contact Number:" />
+      <TextField fx:id="txtContact" layoutX="90.0" layoutY="283.0" onMouseClicked="#txtContactOnMouseClicked" prefHeight="25.0" prefWidth="218.0" />
+      <Label fx:id="lblinvalidcustid" layoutX="90.0" layoutY="164.0" prefHeight="17.0" prefWidth="304.0" text="Wrong Customer ID Format. (Valid Format - &quot;cust-000&quot;)" textFill="RED" />
+      <Label fx:id="lblinvalidcontact" layoutX="92.0" layoutY="308.0" text="Invalid Contact" textFill="RED" />
+   </children>
+</AnchorPane>

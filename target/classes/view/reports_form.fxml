@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane minHeight="-Infinity" minWidth="-Infinity" prefHeight="778.0" prefWidth="1184.0" stylesheets="@../Style/customerForm.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.pharmacy.controller.ReportsFormController">
+   <children>
+      <ImageView fitHeight="790.0" fitWidth="1187.0" layoutY="-8.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/background16.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="120.0" layoutY="30.0" prefHeight="94.0" prefWidth="234.0" text="REPORT FORM">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="940.0" layoutY="709.0" prefHeight="35.0" prefWidth="218.0" text="United Pharmacy">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <AnchorPane layoutX="69.0" layoutY="124.0" prefHeight="462.0" prefWidth="996.0">
+         <children>
+            <JFXButton buttonType="RAISED" layoutX="84.0" layoutY="66.0" onAction="#btnOnCustomerDetaiils" prefHeight="48.0" prefWidth="227.0" style="-fx-background-color: LIME green;" text="Customer Details" />
+            <JFXButton buttonType="RAISED" layoutX="84.0" layoutY="150.0" onAction="#btnOnEmployeDetaiils" prefHeight="48.0" prefWidth="227.0" style="-fx-background-color: LIME green;" text="Employee Details" />
+         </children>
+      </AnchorPane>
+      <ImageView fitHeight="23.0" fitWidth="31.0" layoutX="97.0" layoutY="66.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/bill2icon.jpg" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

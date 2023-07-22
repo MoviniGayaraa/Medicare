@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="260.0" prefWidth="996.0" stylesheets="@../Style/CustomerAddForm.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.pharmacy.controller.OrderDetailFormController">
+   <children>
+      <Label layoutX="55.0" layoutY="38.0" prefHeight="35.0" prefWidth="126.0" text="MedId">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="42.0" fitWidth="45.0" layoutX="916.0" layoutY="11.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/icons8-macos-close-90.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="55.0" layoutY="86.0" prefHeight="35.0" prefWidth="140.0" text="OrderId">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="55.0" layoutY="131.0" prefHeight="35.0" prefWidth="140.0" text="qtyONHand">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <TextField layoutX="216.0" layoutY="38.0" />
+      <TextField layoutX="216.0" layoutY="86.0" />
+      <TextField layoutX="216.0" layoutY="131.0" />
+      <TableView layoutX="565.0" layoutY="28.0" prefHeight="187.0" prefWidth="299.0">
+         <columns>
+            <TableColumn prefWidth="100.0" text="MedId" />
+            <TableColumn prefWidth="100.0" text="OrderId" />
+            <TableColumn prefWidth="100.0" text="qtyOnHand" />
+            <TableColumn minWidth="0.0" prefWidth="106.0" text="Date" />
+         </columns>
+      </TableView>
+      <JFXButton layoutX="902.0" layoutY="210.0" text="Done">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>
